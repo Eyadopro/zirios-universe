@@ -2,37 +2,21 @@
 
 Futuristic luxury streetwear & digital-art immersive WebGL experience.
 
-Built as a living digital art installation, not a conventional fashion website.
-
-## Stack
-
-- React 18 + TypeScript
-- Vite
-- Three.js
-- React Three Fiber + Drei
-- GSAP
-- Zustand (state)
-- Web Audio API (later)
-- Custom GLSL shaders (later)
-
 ## Current Status
 
 **Part 1** ✅ Scaffold  
 **Part 2** ✅ WorldManager + Silent Void  
 **Part 3** ✅ TypographyEngine  
-**Part 4** ✅ Quote System
+**Part 4** ✅ Quote System  
+**Part 5** ✅ Physics
 
-### Quote System features:
-- 50 unique atmospheric quotes for Silent Void
-- Structure ready for all 10 worlds
-- Cinematic transition: fade out → blur → fade in
-- Auto-play with configurable duration
-- Previous / Next / Pause / Resume
-- Full keyboard support:
-  - ← Previous
-  - → Next
-  - Space Pause/Resume
-- History stack so user can always go back
+### Physics features:
+- Cursor repulsion (words gently push away from mouse)
+- Click / tap creates a shockwave that scatters nearby words
+- Spring force that slowly returns every word to its original position
+- Damping for natural deceleration
+- Soft boundary bounce
+- Fully interactive with the 3D typography
 
 ## How to run
 
@@ -41,14 +25,17 @@ npm install
 npm run dev
 ```
 
+Move the mouse over the words → they react.  
+Click → shockwave.
+
 ## Roadmap
 
 1. ✅ Scaffold
 2. ✅ WorldManager + Silent Void
 3. ✅ TypographyEngine
 4. ✅ Quote system
-5. Physics (cursor repulsion + click shockwave)
-6. CameraDirector
+5. ✅ Physics
+6. CameraDirector (drift / orbit / cinematic modes)
 7. More worlds + particles
 8. PostFX + Audio + Ctrl+K Command Center
 9. Archive + polish + performance tiers
