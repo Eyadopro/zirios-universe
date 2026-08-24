@@ -21,7 +21,7 @@ Built as a living digital art installation, not a conventional fashion website.
 src/
 ├── experience/          # 3D root
 │   ├── Experience.tsx
-│   ├── WorldManager/
+│   ├── WorldManager.tsx
 │   ├── TypographyEngine/
 │   ├── ParticleEngine/
 │   ├── PhysicsEngine/
@@ -38,7 +38,7 @@ src/
 │   ├── CyberpunkDistrict/
 │   ├── MatrixRain/
 │   ├── OceanDepths/
-│   ├── SilentVoid/
+│   ├── SilentVoid/      ← implemented
 │   ├── GlassDimension/
 │   └── AuroraSky/
 ├── ui/                  # Premium minimal editorial UI
@@ -49,12 +49,18 @@ src/
 
 ## Current Status
 
-**Part 1 — Scaffold complete**
+**Part 1 — Scaffold complete** ✅  
+**Part 2 — WorldManager + Silent Void** ✅
 
-- Vite + React + TS project
-- Canvas with basic lighting + placeholder mesh
-- Minimal luxury UI shell (header + footer)
-- Clean folder structure ready for systems
+- World switching system via Zustand
+- Silent Void fully implemented:
+  - Near-black environment
+  - Exponential fog
+  - Sparse dust particles
+  - Distant stars
+  - Extremely slow continuous drift
+  - Minimal meditative atmosphere
+- UI shows current world name
 
 ## How to run
 
@@ -66,7 +72,7 @@ npm run dev
 ## Roadmap (parts)
 
 1. ✅ Project scaffold + basic scene + UI shell
-2. WorldManager + first world (Silent Void)
+2. ✅ WorldManager + first world (Silent Void)
 3. TypographyEngine (procedural 3D words)
 4. Quote system
 5. Physics (repulsion / shockwave)
