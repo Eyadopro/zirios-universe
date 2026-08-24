@@ -22,7 +22,7 @@ src/
 ├── experience/          # 3D root
 │   ├── Experience.tsx
 │   ├── WorldManager.tsx
-│   ├── TypographyEngine/
+│   ├── TypographyEngine/   ← implemented
 │   ├── ParticleEngine/
 │   ├── PhysicsEngine/
 │   ├── CameraDirector/
@@ -31,36 +31,26 @@ src/
 │   ├── PostFXManager/
 │   └── PerformanceManager/
 ├── worlds/              # 10 immersive environments
-│   ├── BloodRitual/
-│   ├── EditorialStudio/
-│   ├── CosmicInfinity/
-│   ├── InfernoHearth/
-│   ├── CyberpunkDistrict/
-│   ├── MatrixRain/
-│   ├── OceanDepths/
 │   ├── SilentVoid/      ← implemented
-│   ├── GlassDimension/
-│   └── AuroraSky/
-├── ui/                  # Premium minimal editorial UI
-├── store/               # Zustand stores
-├── shaders/             # GLSL
-└── utils/
+│   └── ... (others coming)
+├── ui/
+├── store/
+└── ...
 ```
 
 ## Current Status
 
-**Part 1 — Scaffold complete** ✅  
-**Part 2 — WorldManager + Silent Void** ✅
+**Part 1** ✅ Scaffold  
+**Part 2** ✅ WorldManager + Silent Void  
+**Part 3** ✅ TypographyEngine
 
-- World switching system via Zustand
-- Silent Void fully implemented:
-  - Near-black environment
-  - Exponential fog
-  - Sparse dust particles
-  - Distant stars
-  - Extremely slow continuous drift
-  - Minimal meditative atmosphere
-- UI shows current world name
+### TypographyEngine features:
+- 32 procedural floating words from vocabulary
+- Mix of huge, medium and tiny distant words
+- Independent position / rotation / velocity / opacity
+- Slow continuous drift + soft boundary wrapping
+- One prominent "ZIRIOS" near center
+- Designed to feel dense and cinematic inside the void
 
 ## How to run
 
@@ -69,18 +59,17 @@ npm install
 npm run dev
 ```
 
-## Roadmap (parts)
+## Roadmap
 
-1. ✅ Project scaffold + basic scene + UI shell
-2. ✅ WorldManager + first world (Silent Void)
-3. TypographyEngine (procedural 3D words)
+1. ✅ Scaffold
+2. ✅ WorldManager + Silent Void
+3. ✅ TypographyEngine
 4. Quote system
-5. Physics (repulsion / shockwave)
-6. CameraDirector modes
-7. Particle systems per world
-8. Remaining 9 worlds
-9. PostFX + Audio + Command Center (Ctrl+K)
-10. Archive + polish + performance tiers
+5. Physics (cursor repulsion + click shockwave)
+6. CameraDirector
+7. More worlds + particles
+8. PostFX + Audio + Ctrl+K Command Center
+9. Archive + polish + performance tiers
 
 ---
 
