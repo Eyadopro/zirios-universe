@@ -1,0 +1,65 @@
+.quote-root {
+  position: fixed;
+  bottom: 90px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  z-index: 20;
+  padding: 0 40px;
+}
+
+.quote-text {
+  max-width: 720px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  line-height: 1.7;
+  color: rgba(230, 230, 230, 0.85);
+  transition: none; /* driven by JS for precise control */
+  will-change: opacity, filter;
+}
+
+.quote-controls {
+  margin-top: 28px;
+  display: flex;
+  gap: 18px;
+  pointer-events: auto;
+  opacity: 0.35;
+  transition: opacity 0.5s ease;
+}
+
+.quote-controls:hover {
+  opacity: 0.8;
+}
+
+.quote-controls button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.quote-controls button:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .quote-text {
+    font-size: 13px;
+  }
+  .quote-root {
+    bottom: 70px;
+    padding: 0 20px;
+  }
+}
