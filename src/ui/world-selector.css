@@ -59,3 +59,16 @@
   color: rgba(255, 255, 255, 0.2);
   text-align: center;
 }
+
+.about-panel {
+  max-width: 420px;
+}
+
+.about-text {
+  font-size: 13px;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  font-weight: 300;
+}
