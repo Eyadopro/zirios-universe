@@ -2,44 +2,52 @@
 
 Futuristic luxury streetwear & digital-art immersive WebGL experience.
 
-## Current Status
+**v1.0.0 — Ready for deployment**
 
-**Part 1** ✅ Scaffold  
-**Part 2** ✅ WorldManager + Silent Void  
-**Part 3** ✅ TypographyEngine  
-**Part 4** ✅ Quote System  
-**Part 5** ✅ Physics  
-**Part 6** ✅ CameraDirector
+## Features
 
-### Camera modes:
-- **Drift** — very slow organic movement (default)
-- **Orbit** — gentle circular orbit
-- **Slow Zoom** — breathing zoom in/out
-- **Cinematic** — sweeping dramatic moves
-- **Runway** — slow forward tracking
-- **Fly Through** — more dynamic path
+- **2 complete worlds**: Silent Void + Ocean Depths
+- **Procedural 3D Typography** with independent movement
+- **Physics**: cursor repulsion + click shockwave + spring return
+- **Cinematic Camera** (6 modes, press `C` to cycle)
+- **Quote System** with fade/blur transitions + keyboard controls
+- **Minimal luxury UI** + World selector + About
 
-Press **C** to cycle modes.  
-All movement is heavily damped for a luxurious feel.
+## Controls
 
-## How to run
+| Key / Action       | Effect                    |
+|--------------------|---------------------------|
+| Mouse move         | Typography repulsion      |
+| Click              | Shockwave                 |
+| `C`                | Cycle camera modes        |
+| `←` `→`            | Previous / Next quote     |
+| `Space`            | Pause / Resume quotes     |
+| WORLDS button      | Switch worlds             |
+
+## Deploy to Vercel
+
+1. Go to [vercel.com](https://vercel.com)
+2. Import the GitHub repo: `Eyadopro/zirios-universe`
+3. Framework Preset: **Vite**
+4. Deploy
+
+Or with CLI:
+
+```bash
+npm i -g vercel
+vercel
+```
+
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Roadmap
+## Stack
 
-1. ✅ Scaffold
-2. ✅ WorldManager + Silent Void
-3. ✅ TypographyEngine
-4. ✅ Quote system
-5. ✅ Physics
-6. ✅ CameraDirector
-7. More worlds + particles
-8. PostFX + Audio + Ctrl+K Command Center
-9. Archive + polish + performance tiers
+React · TypeScript · Three.js · React Three Fiber · Drei · GSAP · Zustand · Vite
 
 ---
 
