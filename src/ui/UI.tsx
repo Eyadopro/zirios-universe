@@ -1,6 +1,11 @@
+import { useWorldStore } from '../store/useWorldStore'
 import './ui.css'
 
 export function UI() {
+  const currentWorld = useWorldStore((s) => s.currentWorld)
+
+  const worldLabel = currentWorld.replace(/-/g, ' ').toUpperCase()
+
   return (
     <div className="ui-root">
       <header className="ui-header">
@@ -12,9 +17,13 @@ export function UI() {
         </nav>
       </header>
 
+      <div className="ui-center">
+        <div className="world-label">{worldLabel}</div>
+      </div>
+
       <div className="ui-footer">
         <span className="meta">DIGITAL UNIVERSE</span>
-        <span className="meta">v0.1.0</span>
+        <span className="meta">v0.2.0 — SILENT VOID</span>
       </div>
     </div>
   )
