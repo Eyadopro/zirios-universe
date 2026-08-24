@@ -26,7 +26,7 @@ export function UI() {
 
       <div className="ui-footer">
         <span className="meta">DIGITAL UNIVERSE</span>
-        <span className="meta">v0.4.0 — QUOTES</span>
+        <span className="meta">v0.5.0 — PHYSICS</span>
       </div>
     </div>
   )
