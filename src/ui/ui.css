@@ -41,6 +41,23 @@
   color: var(--fg);
 }
 
+.ui-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+
+.world-label {
+  font-size: 11px;
+  letter-spacing: 0.45em;
+  color: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
 .ui-footer .meta {
   font-size: 10px;
   letter-spacing: 0.18em;
