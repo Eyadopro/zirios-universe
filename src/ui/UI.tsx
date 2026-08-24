@@ -23,7 +23,7 @@ export function UI() {
 
       <div className="ui-footer">
         <span className="meta">DIGITAL UNIVERSE</span>
-        <span className="meta">v0.2.0 — SILENT VOID</span>
+        <span className="meta">v0.3.0 — TYPOGRAPHY</span>
       </div>
     </div>
   )
