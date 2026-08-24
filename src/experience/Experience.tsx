@@ -1,15 +1,16 @@
 import { WorldManager } from './WorldManager'
+import { TypographyEngine } from './TypographyEngine/TypographyEngine'
 
 /**
  * Experience — root of the 3D scene.
- * Hosts WorldManager and later TypographyEngine, ParticleEngine, etc.
+ * Hosts WorldManager + TypographyEngine + future systems.
  */
 export function Experience() {
   return (
     <>
       <WorldManager />
-      {/* Future systems will live here:
-          <TypographyEngine />
+      <TypographyEngine />
+      {/* Future systems:
           <ParticleEngine />
           <PhysicsEngine />
           <CameraDirector />
