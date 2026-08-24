@@ -1,4 +1,5 @@
 import { useWorldStore } from '../store/useWorldStore'
+import { QuoteEngine } from '../experience/QuoteEngine/QuoteEngine'
 import './ui.css'
 
 export function UI() {
@@ -21,9 +22,11 @@ export function UI() {
         <div className="world-label">{worldLabel}</div>
       </div>
 
+      <QuoteEngine />
+
       <div className="ui-footer">
         <span className="meta">DIGITAL UNIVERSE</span>
-        <span className="meta">v0.3.0 — TYPOGRAPHY</span>
+        <span className="meta">v0.4.0 — QUOTES</span>
       </div>
     </div>
   )
